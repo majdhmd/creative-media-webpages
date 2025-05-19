@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الوسائط الإبداعية - نبذة عن التخصص</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #f3f4f6;
+      color: #2c3e50;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(-45deg, #3b82f6, #1e3a8a, #2563eb, #1e40af);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+    }
+    
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 40px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+   h2 {
+  font-size: 1.8rem;
+  color: #1e40af;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 3px rgba(30, 58, 138, 0.4);
+}
+
+
+    p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+     .titleone{
+      font-size: 1.1rem;
+  color: #fff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: square inside;
+      columns: 2;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.06);
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      ul {
+        columns: 1;
+      }
+
+      section {
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .gallery img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 15px;
+      }
+
+      header {
+        padding: 20px 10px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+        padding: 15px;
+      }
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://cdn.pixabay.com/photo/2020/04/14/15/12/video-5043620_1280.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.05;
+      z-index: -1;
+      pointer-events: none;
+    }
+.back-home-link {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.back-home-link:hover {
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.back-home-link:hover {
+  animation: bounce 0.6s;
+}
+  /* Lightbox overlay */
+  #lightbox-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  #lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+  }
+  .back-home-link:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 3px;
+}
+
+
+  </style>
+</head>
+<body>
+<div id="lightbox-overlay">
+  <img src="" alt="تكبير الصورة" />
+</div>
+
+  <header>
+    <h1>الوسائط الإبداعية</h1>
+    <p class="titleone">استكشاف عالم الإعلام الرقمي والإبداعي</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>نبذة عن التخصص</h2>
+      <p>
+        تقدم شهادة Pearson BTEC الدولية في الإعلام الإبداعي فرصة مميزة للطلاب الذين يرغبون في تطوير مهاراتهم في هذا المجال.
+        يتميز التخصص بالتوازن بين الجوانب النظرية والعملية، مما يعزز مهارات البحث والتفكير الإبداعي وإنتاج الوسائط الرقمية.
+      </p>
+    </section>
+
+    <section>
+      <h2>مزايا التخصص</h2>
+      <p>
+        يغطي التخصص مجموعة واسعة من مجالات الإعلام مثل التصميم والإنتاج الرقمي والتصوير، مما يمنح الطلاب فرصة لبناء مسار مهني مرن ومتنوع.
+      </p>
+      <p>
+        كما يجمع بين التكنولوجيا والإبداع مما يمكن الطلاب من تحويل أفكارهم الخيالية إلى مشاريع رقمية واقعية.
+      </p>
+    </section>
+
+    <section>
+      <h2>ابرز فرص العمل</h2>
+      <ul>
+        <li>مصمم واجهات التطبيق والمستخدم</li>
+        <li>الإنتاج السينمائي والتلفزيوني</li>
+        <li>تصميم المؤثرات البصرية</li>
+        <li>تصميم الألعاب الرقمية</li>
+        <li>هندسة الصوت</li>
+        <li>الطباعة الرقمية</li>
+        <li>الإعلان والتسويق الرقمي</li>
+        <li>تصميم مواقع إلكترونية</li>
+        <li>الإنتاج الفوتوغرافي والمرئي</li>
+        <li>كتابة السيناريو</li>
+        <li>الوسائط الرقمية</li>
+        <li>الرسوم المتحركة</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>المهارات المكتسبة</h2>
+      <p><strong>البحث والتطوير:</strong> استكشاف الأفكار وتطبيق أدوات بحث فعالة.</p>
+      <p><strong>إنتاج الفيديو:</strong> تقنيات التصوير والمونتاج والنشر.</p>
+      <p><strong>التصوير الفوتوغرافي:</strong> استخدام الكاميرات الرقمية وبرامج المعالجة.</p>
+      <p><strong>الرسوم المتحركة:</strong> إنشاء رسوم متحركة باستخدام أدوات متخصصة.</p>
+      <p><strong>تصميم المواقع:</strong> تطوير صفحات ويب احترافية.</p>
+      <p><strong>برمجة الألعاب:</strong> تصميم وتطوير ألعاب تفاعلية.</p>
+    </section>
+
+<section>
+  <h2>بعض من أعمال طالباتنا</h2>
+  <h3 class="section-subtitle">📷 مادة التصوير الرقمي</h3>
+  <br>
+  <div class="gallery">
+    <img src="photo01.jpeg" alt="عمل طالبة 1" />
+    <img src="photo02.jpeg" alt="عمل طالبة 2" />
+    <img src="photo03.jpeg" alt="عمل طالبة 3" />
+    <img src="photo04.jpeg" alt="عمل طالبة 4" />
+    <img src="photo05.jpeg" alt="عمل طالبة 5" />
+    <img src="photo06.jpeg" alt="عمل طالبة 6" />
+
+  </div>
+</section>
+ 
+
+
+
+  </main>
+<a href="index.html" class="back-home-link"> العودة للصفحة الرئيسية</a>
+<script>
+  const lightbox = document.getElementById('lightbox-overlay');
+  const lightboxImg = lightbox.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+  });
+</script>
+
+
+
+
+  <footer>
+    &copy; 2025 الوسائط الإبداعية - جميع الحقوق محفوظة | تم التصميم بعناية لتعكس الإبداع الرقمي
+  </footer>
+  
+
+</body>
+</html>
+
