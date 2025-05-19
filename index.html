@@ -1,662 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>التوجيه المهني - التصنيف بعد التاسع 2025/2024</title>
-   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --primary: #2c3e50;
-      --secondary: #34495e;
-      --background: #f0f3f5;
-      --text: #333;
-      --accent: #3498db;
-      --light: #ffffff;
-      --muted: #7f8c8d;
-    }
-
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-    
-      font-family: 'Cairo', sans-serif;
-      background-color: var(--background);
-      color: var(--text);
-    }
-
-
-   header.hero {
-  position: relative;
-  background-image: url('/home/mohiesen/Desktop/creative-media-website/cover2.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 2rem;
-  overflow: hidden;
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 800px;
-}
-
-.hero-content img.logo {
-  width: 180px;
-  height: auto;
-  margin-bottom: 1rem;
-  animation: fadeInUp 1s ease-in-out;
-}
-hero-content img.logo {
-  width: 180px;
-  height: auto;
-  margin-bottom: 1rem;
-  animation: fadeInUp 1s ease-in-out;
-}
-
-   
-header.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-}
-    header.hero h1,
-    header.hero p {
-      position: relative;
-      z-index: 1;
-    }
-
-    header.hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: fadeInDown 1s ease-in-out;
-      text-shadow: 2px 2px 6px #000;
-    }
-
-    header.hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      animation: fadeInUp 1s ease-in-out;
-      text-shadow: 2px 2px 6px #000;
-    }
-  header.hero img {
-  display: block;
-  margin: 100px auto 1rem auto;
-  animation: fadeInUp 1s ease-in-out;
-  width: 180px;
-  height: auto;
-  position: relative;
-  z-index: 1;
-    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
-
-}
-
-    nav {
-      background-color: var(--secondary);
-      padding: 0.75rem 1.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--primary);
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
-
-    p {
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .secondary-title {
-      color: white;
-      line-height: 1.7;
-    }
-
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: var(--light);
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      flex: 1 1 300px;
-    }
-
-    ul {
-      padding-right: 1.5rem;
-    }
-
-    .fields-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .fields-grid div {
-      background: #fff;
-      border: 1px solid #ccc;
-      padding: 1rem;
-      border-radius: 8px;
-      text-align: center;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .fields-grid div:hover {
-      background: var(--accent);
-      color: white;
-    }
-
- footer {
-      background-color: var(--secondary);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      
-    }
-
-
-    .faq-item {
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      overflow: hidden;
-      background-color: #fff;
-    }
-
-    .faq-question {
-      background: var(--accent);
-      color: white;
-      padding: 1rem;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .faq-question:hover {
-      background: #2d89c8;
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 1rem;
-      color: var(--text);
-      background-color: #f9f9f9;
-      line-height: 1.6;
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 768px) {
-      header.hero h1 {
-        font-size: 2rem;
-      }
-
-      .card-container {
-        flex-direction: column;
-      }
-
-      nav {
-        flex-direction: column;
-      }
-    }
-
-    .card:hover {
-  transform: scale(1.02);
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-.schools-grid {
-      display: grid;
-      gap: 1rem;
-    }
-
-    .school-card {
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .school-header {
-      width: 100%;
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      padding: 0.75rem 1rem;
-      font-size: 1rem;
-      text-align: center;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .school-header:hover {
-      background-color: #3498db;
-    }
-
-    .school-body {
-      display: none;
-      padding: 0.75rem 1rem;
-      background-color: #f9f9f9;
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    .school-body.active {
-      display: block;
-    }
-
-    .school-body ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    .school-body li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid #eee;
-      font-size: 0.9rem;
-      color: #333;
-    }
-
-    .school-body li:last-child {
-      border-bottom: none;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-5px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    #scrollUpBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s, transform 0.3s;
-  z-index: 1000;
-}
-
-#scrollUpBtn:hover {
-  background: #2874a6; 
-  transform: scale(1.1);
-}
-
-
-
-  </style>
-</head>
-<body>
-
-  <header class="hero">
-
-  <img src="/home/mohiesen/Desktop/creative-media-website/pearsonlogo.png" class= "leftlogo "alt="Left Logo" style="position: absolute; top: 1px; left: 20px; width: 180px; height: auto; " />
-
-
-  <img src="/home/mohiesen/Desktop/creative-media-website/schoollogo.png" alt="Right Logo" style="position: absolute; top: 20px; right: 20px; width: 160px; height: auto; z-index: 2;" />
-
-  <div class="hero-content">
-    <img src="/home/mohiesen/Desktop/creative-media-website/logo.png" alt="Main Logo" class="logo">
-
-    <h1>مدرسة تلاع العلي الثانوية للبنات</h1>
-    <p class="secondary-title">اكتشف مستقبلك الأكاديمي والمهني بثقة من خلال المسارات التعليمية المتنوعة</p>
-  </div>
-</header>
-
-
-  <nav>
-    <a href="#tracks">المسارات</a>
-    <a href="#btec">BTEC</a>
-    <a href="#fields">التخصصات</a>
-        <a href="#schools">المدارس المهنية</a>
-    <a href="#faq">الأسئلة</a>
-
-
-  </nav>
-
-  <section id="tracks">
-    <h2>المسارات التعليمية بعد الصف التاسع</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>المسار الأكاديمي</h3>
-        <p>يوفر خيارات متعددة في التخصصات العلمية أو الأدبية للوصول إلى التعليم الجامعي التقليدي.</p>
-      </div>
-      <div class="card">
-        <h3>المسار المهني (BTEC)</h3>
-        <p>يركز على الجانب العملي ويمنح شهادات دولية معترف بها تؤهلك للعمل أو استكمال الدراسة.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="btec">
-    <h2>مميزات المسار المهني (BTEC)</h2>
-    <ul>
-      <li>تعليم عملي يركز على المهارات الحياتية والمهنية.</li>
-      <li>مناسب للطلاب الذين يفضلون المشاريع والتقييم المستمر.</li>
-      <li>يفتح المجال للدراسة الجامعية أو العمل المباشر.</li>
-      <li>تعلم تطبيقي يعتمد على المشاريع والتقارير بدلاً من الامتحانات التقليدية.</li>
-      <li>فرص تدريب عملي حقيقية تؤهلك لسوق العمل.</li>
-      <li>إمكانية مواصلة الدراسة الجامعية داخل أو خارج الدولة.</li>
-    </ul>
-  </section>
-
-  <section id="fields">
-    <h2>التخصصات المتاحة في المسار المهني</h2>
-    <div class="fields-grid">
- <a href="/home/mohiesen/Desktop/creative-media-website/creative-media.html" target="_blank" style="color: inherit; text-decoration: none;";">
-    <div>الوسائط الإبداعية</div>
-  </a>
-      <div>تكنولوجيا المعلومات</div>
-      <div>الهندسة</div>
-      <div>الفن والتصميم</div>
-      <div>الضيافة </div>
-      <div> الأعمال</div>
-      <div>  الشعر والتجميل</div>
-      <div> السياحة والسفر</div>
-      <div> بناء وإنشاءات</div>
-         <div> رعاية صحية </div>
-      <div> رياضة </div>
-    </div>
-
-
-<section id="schools">
-  <h2>📚 المدارس المهنية التابعة لمديرية لواء الجامعة</h2>
-  <p style="text-align: center; color: var(--muted); font-size: 1.1rem; margin-bottom: 2rem;">
-    اضغط على اسم المدرسة لعرض التخصصات المتاحة فيها:
-  </p>
-
-  <div class="schools-grid">
-     <div class="school-card">
-      <button class="school-header">تلاع العلي الثانوية للبنات</button>
-      <div class="school-body">
-        <ul>
-          <li>الوسائط الإبداعية (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="school-card">
-      <button class="school-header">ابن النفيس الصناعية للبنين</button>
-      <div class="school-body">
-        <ul>
-          <li>هندسي (BTEC)</li>
-          <li>البناء والإنشاءات (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">سيف الدولة الصناعية للبنين</button>
-      <div class="school-body">
-        <ul>
-          <li>هندسي (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">رشيد طليع الثانوية للبنين</button>
-      <div class="school-body">
-        <ul>
-          <li>ضيافة (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header"> ابن العميد الثانوية للبنين  </button>
-      <div class="school-body">
-        <ul>
-          <li>تكنولوجيا المعلومات (BTEC)</li>
-          <li>الأعمال (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">شفا بدران الثانوية للبنين</button>
-      <div class="school-body">
-        <ul>
-          <li>تكنولوجيا المعلومات (BTEC)</li>
-          <li>الأعمال (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">أم كثير الثانوية للبنات</button>
-      <div class="school-body">
-        <ul>
-          <li>الشعر والتجميل (BTEC)</li>
-          <li>تكنولوجيا المعلومات (BTEC)</li>
-          <li>الأعمال (BTEC)</li>
-          <li>هندسي (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">الأميرة بسمة الثانوية للبنات</button>
-      <div class="school-body">
-        <ul>
-          <li>الشعر والتجميل (BTEC)</li>
-          <li>الفن والتصميم (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">الخنساء الثانوية للبنات</button>
-      <div class="school-body">
-        <ul>
-          <li>تكنولوجيا المعلومات (BTEC)</li>
-          <li>الأعمال (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">المروج الثانوية للبنات</button>
-      <div class="school-body">
-        <ul>
-          <li>الفن والتصميم (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-   
-
-    <div class="school-card">
-      <button class="school-header">مدرسة الأميرة بسمة - معهد التدريب المهني أبو نصير</button>
-      <div class="school-body">
-        <ul>
-          <li>الشعر والتجميل (BTEC)</li>
-          <li>ضيافة (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- إعادة 5 مدارس بشكل عشوائي -->
-    <div class="school-card">
-      <button class="school-header">مرج الحمام المهنية للبنين</button>
-      <div class="school-body">
-        <ul>
-          <li>زراعي (BTEC)</li>
-          
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header"> أم جوزة المهنية للبنين</button>
-      <div class="school-body">
-        <ul>
-          <li> زراعي (BTEC)</li>
-          
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">البيادر المهنية  للبنات</button>
-      <div class="school-body">
-        <ul>
-          <li> الضيافة (BTEC)</li>
-         
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">مدرسة بنت عدي الثانوية للبنات</button>
-      <div class="school-body">
-        <ul>
-          <li> السياحة والسفر (BTEC)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <button class="school-header">مدرسة ابن عباس الثانوية للبنين</button>
-      <div class="school-body">
-        <ul>
-          <li> الرياضة (BTEC)</li>
-         
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-      <button id="scrollUpBtn" title="الرجوع للأعلى">↑</button>
-
-
-
-
-
-
-  <section id="faq">
-    <h2>الأسئلة الشائعة</h2>
-    <div class="faq-item">
-      <div class="faq-question">هل يمكن للخريجين الالتحاق بسوق العمل مباشرة؟</div>
-      <div class="faq-answer">نعم، وذلك بعد إنهاء مرحلة الدراسة الثانوية وإنهاء متطلبات برنامج تطوير التعليم المهني للحصول على مزاولة مهنة معتمدة من هيئة تنمية وتطوير المهارات المهنية والتقنية وتسكين المؤهل الذي حصل عليه ضمن الإطار الوطني للمؤهلات.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">هل شهادة BTEC معترف بها؟</div>
-      <div class="faq-answer">نعم، شهادة BTEC معترف بها دوليًا وتفتح أبواب التعليم والعمل في العديد من الدول.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">ما هي المهارات التي أكتسبها؟</div>
-      <div class="faq-answer">تفكير نقدي، تواصل، إدارة الوقت، عمل جماعي، وحل المشكلات.</div>
-    </div>
-  </section>
-
- 
-
-
-
- 
-
-
-
-   <script>
-       const scrollUpBtn = document.getElementById("scrollUpBtn");
-
-    // إظهار الزر عندما تنزل الصفحة 100 بكسل أو أكثر
-    window.onscroll = function() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollUpBtn.style.display = "block";
-      } else {
-        scrollUpBtn.style.display = "none";
-      }
-    };
-
-    // عند الضغط على الزر، عد لأعلى الصفحة بسلاسة
-    scrollUpBtn.addEventListener("click", function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-     
-document.querySelectorAll('.school-header').forEach(button => {
-      button.addEventListener('click', () => {
-        const currentBody = button.nextElementSibling;
-
-        // Close all others
-        document.querySelectorAll('.school-body.active').forEach(body => {
-          if (body !== currentBody) {
-            body.classList.remove('active');
-          }
-        });
-
-        // Toggle current one
-        currentBody.classList.toggle('active');
-      });
-    });
-
-
-    document.querySelectorAll('.faq-question').forEach((item) => {
-      item.addEventListener('click', () => {
-        const answer = item.nextElementSibling;
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-    
-  </script>
-    <footer>
-    &copy; 2025 الوسائط الإبداعية - جميع الحقوق محفوظة | تم التصميم بعناية لتعكس الإبداع الرقمي
-  </footer>
-</body>
-</html>
